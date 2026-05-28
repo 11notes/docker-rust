@@ -6,7 +6,7 @@
     "version": "1.95.0"
   },
   "readme": {
-    "description": "Build rust apps with the default tooling present",
+    "description": "Build static linked rust apps with the default tooling present",
     "parent": {
       "image": "11notes/alpine:stable"
     },
