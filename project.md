@@ -1,4 +1,4 @@
-${{ content_synopsis }} Build rust applications with the default tooling present.
+${{ content_synopsis }} Build static linked rust apps with the default tooling present.
 
 ${{ content_build }}
 
