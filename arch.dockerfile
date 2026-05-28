@@ -48,6 +48,7 @@
   # :: install dependencies
     RUN set -eux; \
       apk --update --no-cache add \
+        build-base \
         git;
 
   # :: install rust
