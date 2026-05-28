@@ -3,7 +3,7 @@
   "name": "rust",
   "root": "/rust",
   "semver": {
-    "version": "1.94.0"
+    "version": "1.95.0"
   },
   "readme": {
     "description": "Build rust apps with the default tooling present",
