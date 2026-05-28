@@ -8,7 +8,7 @@
   "readme": {
     "description": "Build rust apps with the default tooling present",
     "parent": {
-      "image": "rust"
+      "image": "11notes/alpine:stable"
     },
     "built": {
       "rust": "https://github.com/rust-lang/rust"
