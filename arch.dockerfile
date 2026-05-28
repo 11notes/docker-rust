@@ -57,3 +57,7 @@
   # :: install rust
     RUN set -eux; \
       curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain ${APP_VERSION} -y;
+
+  # :: verify
+    RUN set -eux; \
+      rustc --version | grep -q "${APP_VERSION}";
