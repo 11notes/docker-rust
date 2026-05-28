@@ -1,0 +1,19 @@
+{
+  "image": "11notes/rust",
+  "name": "rust",
+  "root": "/rust",
+  "semver": {
+    "version": "1.94.0"
+  },
+  "readme": {
+    "description": "Build rust apps with the default tooling present",
+    "parent": {
+      "image": "rust"
+    },
+    "built": {
+      "rust": "https://github.com/rust-lang/rust"
+    }
+  },
+  "unraid": false,
+  "nobody": false
+}
