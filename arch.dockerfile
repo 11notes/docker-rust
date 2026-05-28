@@ -13,7 +13,7 @@
 # ║                       IMAGE                         ║
 # ╚═════════════════════════════════════════════════════╝
   # :: HEADER
-  FROM rust:${APP_VERSION}-alpine
+  FROM 11notes/alpine:stable
 
   # :: default arguments
     ARG TARGETPLATFORM \
@@ -40,9 +40,19 @@
 # :: RUN
   USER root
 
-  # :: install dependencies
+  # :: upgrade to edge for build chain
     RUN set -eux; \
       apk --update --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/main --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community \
-        upgrade; \
+        upgrade;
+
+  # :: install dependencies
+    RUN set -eux; \
       apk --update --no-cache add \
         git;
+
+  # :: install rust
+    RUN set -eux; \
+      curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain ${APP_VERSION} -y;
+
+    RUN set -eux; \
+      source "${HOME}/.cargo/env";
