@@ -34,6 +34,9 @@
         APP_VERSION=${APP_VERSION} \
         APP_ROOT=${APP_ROOT}
 
+  # :: app specific environment
+    ENV PATH="/root/.cargo/bin:${PATH}"
+
   # :: multi-stage
     COPY --from=util / /
 
@@ -54,6 +57,3 @@
   # :: install rust
     RUN set -eux; \
       curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain ${APP_VERSION} -y;
-
-    RUN set -eux; \
-      source "${HOME}/.cargo/env";
