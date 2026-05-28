@@ -3,10 +3,10 @@
 # RUST
 ![size](https://img.shields.io/badge/image_size-1GB-green?color=%2338ad2d)![5px](https://raw.githubusercontent.com/11notes/static/refs/heads/master/img/markdown/transparent5x2px.png)![pulls](https://img.shields.io/docker/pulls/11notes/rust?color=2b75d6)![5px](https://raw.githubusercontent.com/11notes/static/refs/heads/master/img/markdown/transparent5x2px.png)[<img src="https://img.shields.io/github/issues/11notes/docker-rust?color=7842f5">](https://github.com/11notes/docker-rust/issues)![5px](https://raw.githubusercontent.com/11notes/static/refs/heads/master/img/markdown/transparent5x2px.png)![swiss_made](https://img.shields.io/badge/Swiss_Made-FFFFFF?labelColor=FF0000&logo=data:image/svg%2bxml;base64,PHN2ZyB2ZXJzaW9uPSIxIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDMyIDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxyZWN0IHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0idHJhbnNwYXJlbnQiLz4KICA8cGF0aCBkPSJtMTMgNmg2djdoN3Y2aC03djdoLTZ2LTdoLTd2LTZoN3oiIGZpbGw9IiNmZmYiLz4KPC9zdmc+)
 
-Build rust apps with the default tooling present
+Build static linked rust apps with the default tooling present
 
 # SYNOPSIS 📖
-**What can I do with this?** Build rust applications with the default tooling present.
+**What can I do with this?** Build static linked rust apps with the default tooling present.
 
 # BUILD 🚧
 ```yaml
@@ -66,4 +66,4 @@ docker pull quay.io/11notes/rust:1.95.0
 # ElevenNotes™️
 This image is provided to you at your own risk. Always make backups before updating an image to a different version. Check the [releases](https://github.com/11notes/docker-rust/releases) for breaking changes. If you have any problems with using this image simply raise an [issue](https://github.com/11notes/docker-rust/issues), thanks. If you have a question or inputs please create a new [discussion](https://github.com/11notes/docker-rust/discussions) instead of an issue. You can find all my other repositories on [github](https://github.com/11notes?tab=repositories).
 
-*created 28.05.2026, 07:39:06 (CET)*
+*created 28.05.2026, 09:00:19 (CET)*
