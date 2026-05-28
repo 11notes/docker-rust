@@ -42,6 +42,7 @@
 
   # :: install dependencies
     RUN set -eux; \
-      apk --update --no-cache upgrade; \
+      apk --update --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/main --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community \
+        upgrade; \
       apk --update --no-cache add \
         git;
