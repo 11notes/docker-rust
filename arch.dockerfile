@@ -42,5 +42,6 @@
 
   # :: install dependencies
     RUN set -eux; \
+      apk --update --no-cache upgrade; \
       apk --update --no-cache add \
         git;
