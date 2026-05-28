@@ -56,7 +56,10 @@
 
   # :: install rust
     RUN set -eux; \
-      curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain ${APP_VERSION} -y;
+      case "${TARGETARCH}${TARGETVARIANT}" in \
+        "armv7") curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain ${APP_VERSION} --target armv7-unknown-linux-musleabi -y;; \
+        *) curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain ${APP_VERSION} -y;; \
+      esac;
 
   # :: verify
     RUN set -eux; \
