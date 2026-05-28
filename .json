@@ -1,5 +1,6 @@
 {
   "image": "11notes/rust",
+  "platform":"amd64,arm64",
   "name": "rust",
   "root": "/rust",
   "semver": {
