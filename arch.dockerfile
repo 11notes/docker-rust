@@ -6,9 +6,6 @@
       APP_GID=1000 \
       APP_VERSION=0
 
-  # :: FOREIGN IMAGES
-  FROM 11notes/util:bin AS util
-
 # ╔═════════════════════════════════════════════════════╗
 # ║                       IMAGE                         ║
 # ╚═════════════════════════════════════════════════════╝
@@ -36,9 +33,6 @@
 
   # :: app specific environment
     ENV PATH="/root/.cargo/bin:${PATH}"
-
-  # :: multi-stage
-    COPY --from=util / /
 
 # :: RUN
   USER root
