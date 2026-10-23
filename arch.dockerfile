@@ -46,7 +46,8 @@
     RUN set -eux; \
       apk --update --no-cache add \
         build-base \
-        git;
+        git \
+        curl;
 
   # :: install rust
     RUN set -eux; \
